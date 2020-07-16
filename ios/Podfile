@@ -1,0 +1,128 @@
+platform :ios, '9.0'
+require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
+
+target 'jebena' do
+  # Pods for jebena
+  permissions_path = '../node_modules/react-native-permissions/ios'
+  pod 'Permission-Camera', :path => "#{permissions_path}/Camera.podspec"
+  pod 'Permission-PhotoLibrary', :path => "#{permissions_path}/PhotoLibrary.podspec"
+  pod 'Permission-Notifications', :path => "#{permissions_path}/Notifications.podspec"
+  pod 'Permission-LocationWhenInUse', :path => "#{permissions_path}/LocationWhenInUse.podspec"
+
+  pod 'FBLazyVector', :path => "../node_modules/react-native/Libraries/FBLazyVector"
+  pod 'FBReactNativeSpec', :path => "../node_modules/react-native/Libraries/FBReactNativeSpec"
+  pod 'RCTRequired', :path => "../node_modules/react-native/Libraries/RCTRequired"
+  pod 'RCTTypeSafety', :path => "../node_modules/react-native/Libraries/TypeSafety"
+  pod 'React', :path => '../node_modules/react-native/'
+  pod 'React-Core', :path => '../node_modules/react-native/'
+  pod 'React-CoreModules', :path => '../node_modules/react-native/React/CoreModules'
+  pod 'React-Core/DevSupport', :path => '../node_modules/react-native/'
+  pod 'React-RCTActionSheet', :path => '../node_modules/react-native/Libraries/ActionSheetIOS'
+  pod 'React-RCTAnimation', :path => '../node_modules/react-native/Libraries/NativeAnimation'
+  pod 'React-RCTBlob', :path => '../node_modules/react-native/Libraries/Blob'
+  pod 'React-RCTImage', :path => '../node_modules/react-native/Libraries/Image'
+  pod 'React-RCTLinking', :path => '../node_modules/react-native/Libraries/LinkingIOS'
+  pod 'React-RCTNetwork', :path => '../node_modules/react-native/Libraries/Network'
+  pod 'React-RCTSettings', :path => '../node_modules/react-native/Libraries/Settings'
+  pod 'React-RCTText', :path => '../node_modules/react-native/Libraries/Text'
+  pod 'React-RCTVibration', :path => '../node_modules/react-native/Libraries/Vibration'
+  pod 'React-Core/RCTWebSocket', :path => '../node_modules/react-native/'
+  pod 'Firebase/Analytics'
+  pod 'RNFBAuth', :path => '../node_modules/@react-native-firebase/auth'
+  pod 'React-cxxreact', :path => '../node_modules/react-native/ReactCommon/cxxreact'
+  pod 'React-jsi', :path => '../node_modules/react-native/ReactCommon/jsi'
+  pod 'React-jsiexecutor', :path => '../node_modules/react-native/ReactCommon/jsiexecutor'
+  pod 'React-jsinspector', :path => '../node_modules/react-native/ReactCommon/jsinspector'
+  pod 'ReactCommon/jscallinvoker', :path => "../node_modules/react-native/ReactCommon"
+  pod 'ReactCommon/turbomodule/core', :path => "../node_modules/react-native/ReactCommon"
+  pod 'Yoga', :path => '../node_modules/react-native/ReactCommon/yoga'
+  pod 'DoubleConversion', :podspec => '../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
+  pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
+  pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
+  pod 'RNGoogleSignin', :path => '../node_modules/@react-native-community/google-signin'
+  pod 'react-native-date-picker', :path => '../node_modules/react-native-date-picker'
+
+  pod 'react-native-image-picker', :path => '../node_modules/react-native-image-picker'
+
+  pod 'RNFBStorage', :path => '../node_modules/@react-native-firebase/storage'
+
+  pod 'RNFastImage', :path => '../node_modules/react-native-fast-image'
+
+  pod 'ReactNativeART', :path => '../node_modules/@react-native-community/art'
+
+  pod 'RNFBRemoteConfig', :path => '../node_modules/@react-native-firebase/remote-config'
+
+  pod 'RNFBDynamicLinks', :path => '../node_modules/@react-native-firebase/dynamic-links'
+
+  pod 'RNFBDatabase', :path => '../node_modules/@react-native-firebase/database'
+
+  pod 'RNFBInAppMessaging', :path => '../node_modules/@react-native-firebase/in-app-messaging';
+
+  pod 'RNFBApp', :path => '../node_modules/@react-native-firebase/app'
+
+  pod 'RNFBFirestore', :path => '../node_modules/@react-native-firebase/firestore'
+
+  pod 'RNFBFunctions', :path => '../node_modules/@react-native-firebase/functions'
+
+  pod 'RNSVG', :path => '../node_modules/react-native-svg'
+
+  pod 'RNShare', :path => '../node_modules/react-native-share'
+
+  pod 'RNFBMLVision', :path => '../node_modules/@react-native-firebase/ml-vision'
+
+  pod 'RNDateTimePicker', :path => '../node_modules/@react-native-community/datetimepicker'
+
+  pod 'FBSDKCoreKit', '5.8'
+
+  pod 'FBSDKLoginKit', '5.8'
+  
+  pod 'FBSDKShareKit', '5.8'
+
+  pod 'react-native-fbsdk', :path => '../node_modules/react-native-fbsdk'
+
+  pod 'RNPermissions', :path => '../node_modules/react-native-permissions'
+
+  pod 'react-native-geolocation', :path => '../node_modules/@react-native-community/geolocation'
+
+  pod 'react-native-safe-area-context', :path => '../node_modules/react-native-safe-area-context'
+
+  pod 'react-native-webview', :path => '../node_modules/react-native-webview'
+
+  pod 'react-native-onesignal', :path => '../node_modules/react-native-onesignal'
+
+
+  pod 'react-native-version-number', :path => '../node_modules/react-native-version-number'
+
+  pod 'rn-range-slider', :path => '../node_modules/rn-range-slider'
+
+  target 'jebenaTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  use_native_modules!
+end
+
+target 'OneSignalNotificationServiceExtension' do
+
+  pod 'OneSignal', '2.12.4'
+
+end
+
+target 'jebena-tvOS' do
+  # Pods for jebena-tvOS
+
+  target 'jebena-tvOSTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
+
+post_install do |pi|
+    pi.pods_project.targets.each do |t|
+        t.build_configurations.each do |config|
+            config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '9.0'
+        end
+    end
+end

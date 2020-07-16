@@ -1,0 +1,51 @@
+rootProject.name = 'jebena'
+include ':react-native-firebase'
+project(':react-native-firebase').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-firebase/android')
+include ':rn-range-slider'
+project(':rn-range-slider').projectDir = new File(rootProject.projectDir, '../node_modules/rn-range-slider/android')
+include ':react-native-version-number'
+project(':react-native-version-number').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-version-number/android')
+include ':react-native-webview'
+project(':react-native-webview').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-webview/android')
+include ':@react-native-community_geolocation'
+project(':@react-native-community_geolocation').projectDir = new File(rootProject.projectDir, '../node_modules/@react-native-community/geolocation/android')
+include ':react-native-permissions'
+project(':react-native-permissions').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-permissions/android')
+include ':react-native-fbsdk'
+project(':react-native-fbsdk').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-fbsdk/android')
+include ':@react-native-community_datetimepicker'
+project(':@react-native-community_datetimepicker').projectDir = new File(rootProject.projectDir, '../node_modules/@react-native-community/datetimepicker/android')
+include ':@react-native-firebase_ml-vision'
+project(':@react-native-firebase_ml-vision').projectDir = new File(rootProject.projectDir, '../node_modules/@react-native-firebase/ml-vision/android')
+include ':react-native-share'
+project(':react-native-share').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-share/android')
+include ':react-native-svg'
+project(':react-native-svg').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-svg/android')
+include ':@react-native-firebase_functions'
+project(':@react-native-firebase_functions').projectDir = new File(rootProject.projectDir, '../node_modules/@react-native-firebase/functions/android')
+include ':@react-native-firebase_firestore'
+project(':@react-native-firebase_firestore').projectDir = new File(rootProject.projectDir, '../node_modules/@react-native-firebase/firestore/android')
+include ':@react-native-firebase_auth'
+project(':@react-native-firebase_auth').projectDir = new File(rootProject.projectDir, '../node_modules/@react-native-firebase/auth/android')
+include ':@react-native-firebase_app'
+project(':@react-native-firebase_app').projectDir = new File(rootProject.projectDir, '../node_modules/@react-native-firebase/app/android')
+include ':@react-native-firebase_database'
+project(':@react-native-firebase_database').projectDir = new File(rootProject.projectDir, '../node_modules/@react-native-firebase/database/android')
+include ':@react-native-firebase_dynamic-links'
+project(':@react-native-firebase_dynamic-links').projectDir = new File(rootProject.projectDir, '../node_modules/@react-native-firebase/dynamic-links/android')
+include ':@react-native-firebase_remote-config'
+project(':@react-native-firebase_remote-config').projectDir = new File(rootProject.projectDir, '../node_modules/@react-native-firebase/remote-config/android')
+include ':@react-native-community_art'
+project(':@react-native-community_art').projectDir = new File(rootProject.projectDir, '../node_modules/@react-native-community/art/android')
+include ':react-native-fast-image'
+project(':react-native-fast-image').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-fast-image/android')
+include ':@react-native-firebase_storage'
+project(':@react-native-firebase_storage').projectDir = new File(rootProject.projectDir, '../node_modules/@react-native-firebase/storage/android')
+include ':react-native-image-picker'
+project(':react-native-image-picker').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-image-picker/android')
+include ':react-native-date-picker'
+project(':react-native-date-picker').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-date-picker/android')
+include ':@react-native-community_google-signin'
+project(':@react-native-community_google-signin').projectDir = new File(rootProject.projectDir, '../node_modules/@react-native-community/google-signin/android')
+apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
+include ':app'
